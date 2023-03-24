@@ -3,10 +3,13 @@ import ListGroup from './components/ListGroup';
 import Message from './Message'
 
 function App() {
-  return <div>
+  const cities = ["Hyderabad", "Delhi", "Haldwani", "Kanpur"];
+  return(
+    <div>
     <Message></Message>
-    <ListGroup/>
-    </div>;
+    <ListGroup items={cities} itemHeading="Hello World"/>
+    </div>
+  );
 }
 
 export default App;
